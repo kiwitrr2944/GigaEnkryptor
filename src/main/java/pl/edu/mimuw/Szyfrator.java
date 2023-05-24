@@ -11,14 +11,16 @@ public class Szyfrator {
             }
             kod -= baza;
             kod += pszesuniencie;
-            kod %= 26;
+            kod = (kod+26)%26;
             kod += baza;
             char x = (char) kod;
             wynik += x;
         }
         return wynik;
     }
-    static public String deSzyfróiCezar() { return null; }
+    static public String deSzyfróiCezar(String napis, int pszesuniencie) {
+        return szyfróiCezar(napis, -pszesuniencie);
+    }
     static public String szyfróiMors() { return null; }
     static public String deSzyfróiMors() { return null; }
 
