@@ -33,6 +33,6 @@ public class Main {
                 sluwka.set(i, Szyfrator.szyfróiMors(wyras));
             }
         }
-        mySzyfrator.fpisz(sluwka, args[3]);
+        myFczytai.fpisz(sluwka, args[3]);
     }
 }
