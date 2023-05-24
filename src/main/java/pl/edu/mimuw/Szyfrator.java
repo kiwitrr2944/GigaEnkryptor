@@ -11,7 +11,7 @@ public class Szyfrator {
     public static HashMap<String, Character> esrom;
     Szyfrator () {
         morse = new HashMap<Character, String>();
-        esrom = new HashMap<String, Character>()
+        esrom = new HashMap<String, Character>();
         morse.put('a', ".-");
         morse.put('b', "-...");
         morse.put('c',  "-.-");
@@ -89,7 +89,7 @@ public class Szyfrator {
     static public String szyfróiMors(String napis) {
         String wynik = new String();
         for (int i=0; i<napis.length(); ++i) {
-            wynik.concat((morse.get(napis.charAt(i))+" "));
+            wynik = wynik + morse.get(napis.charAt(i)) + " ";
         }
         return wynik;
     }
