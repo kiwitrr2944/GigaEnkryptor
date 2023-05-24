@@ -5,5 +5,4 @@ public class Szyfrator {
     static public String deSzyfróiCezar() { return null; }
     static public String szyfróiMors() { return null; }
     static public String deSzyfróiMors() { return null; }
-
 }
