@@ -4,10 +4,11 @@ import com.sun.nio.sctp.AbstractNotificationHandler;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Szyfrator {
-    public HashMap<Character, String> morse;
-    public HashMap<String, Character> esrom;
+    public static HashMap<Character, String> morse;
+    public static HashMap<String, Character> esrom;
     Szyfrator () {
         morse = new HashMap<Character, String>();
         esrom = new HashMap<String, Character>()
@@ -85,9 +86,21 @@ public class Szyfrator {
     static public String deSzyfróiCezar(String napis, int pszesuniencie) {
         return szyfróiCezar(napis, -pszesuniencie);
     }
-    static public String szyfróiMors() {
-
+    static public String szyfróiMors(String napis) {
+        String wynik = new String();
+        for (int i=0; i<napis.length(); ++i) {
+            wynik.concat((morse.get(napis.charAt(i))+" "));
+        }
+        return wynik;
     }
-    static public String deSzyfróiMors() { return null; }
+    static public String deSzyfróiMors(String napis) {
+        Scanner scanner = new Scanner(napis);
+        String wynik = new String();
+        while (scanner.hasNext()) {
+            String morsekod = scanner.next();
+            wynik += esrom.get(morsekod);
+        }
+        return wynik;
+    }
 
 }
