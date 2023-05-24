@@ -27,7 +27,7 @@ public class Fczytai {
     }
 
     public void fpisz(ArrayList<String> zwracanaLista, String nazwaPliku) {
-        //wpisuje do podanego pliku
+        //wpisuje do podanego pliku zmieniamy cos
         //powinien utworzyc nowy plik, a jesli juz istnial to go usunac i stworzyc nowy
         try {
             File plik = new File(nazwaPliku);
