@@ -1,9 +1,9 @@
 package pl.edu.mimuw;
 
 public class Szyfrator {
-    static public String szyfróiCezar() {}
-    static public String deSzyfróiCezar() {}
-    static public String szyfróiMors() {}
-    static public String deSzyfróiMors() {}
+    static public String szyfróiCezar() { return null; }
+    static public String deSzyfróiCezar() { return null; }
+    static public String szyfróiMors() { return null; }
+    static public String deSzyfróiMors() { return null; }
 
 }
