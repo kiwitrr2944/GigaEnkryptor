@@ -1,1 +1,2 @@
 Koksem jestem
+nie jesteś
